@@ -1,0 +1,17 @@
+# -*- mode: sh -*-
+
+# _fzf_complete_cd_post
+# author: Seong Yong-ju <sei40kr@gmail.com>
+
+_fzf_complete_cd_post() {
+    local dir
+
+    read -r dir
+    if [[ "$dir" == '~'* ]]; then
+        printf '%q' "${HOME}${dir:1}"
+    else
+        printf '%q' "$dir"
+    fi
+}
+
+_fzf_complete_cd_post "$@"

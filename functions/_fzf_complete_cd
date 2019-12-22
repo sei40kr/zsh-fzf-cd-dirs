@@ -1,0 +1,10 @@
+# -*- mode: sh -*-
+
+# _fzf_complete_cd
+# author: Seong Yong-ju <sei40kr@gmail.com>
+
+_fzf_complete_cd() {
+    dirs -p | _fzf_complete '' "$@"
+}
+
+_fzf_complete_cd "$@"
