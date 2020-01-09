@@ -1,5 +1,7 @@
 # zsh-fzf-cd-dirs
 
+Complete the directories you've visited once in the shell session in cd with fzf.
+
 ## Example
 
 ```
