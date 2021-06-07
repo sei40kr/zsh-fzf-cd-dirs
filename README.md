@@ -1,11 +1,11 @@
-# zsh-fzf-cd-dirs
+# zsh-fzf-chdir
 
 Complete the directories you've visited once in the shell session in cd with fzf.
 
 ## Example
 
 ```
-# press tab after 2 asterisks to complete a directory from the history
+# Hit Tab after "**"
 $ cd **
 > ▌ < 1/1
 > ~/develop/workspace
@@ -25,7 +25,7 @@ $ cd **
 zplugin ice src'shell/completion.zsh'
 zplugin light junegunn/fzf
 
-zplugin light sei40kr/zsh-fzf-cd-dirs
+zplugin light sei40kr/zsh-fzf-chdir
 ```
 
 ### Install with [zplug](https://github.com/zplug/zplug)
@@ -33,5 +33,5 @@ zplugin light sei40kr/zsh-fzf-cd-dirs
 ```sh
 zplug junegunn/fzf, use:'shell/completion.zsh'
 
-zplug sei40kr/zsh-fzf-cd-dirs
+zplug sei40kr/zsh-fzf-chdir
 ```
